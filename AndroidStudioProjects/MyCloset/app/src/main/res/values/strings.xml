@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">MyCloset</string>
+    <string name="sMojeOmare">Moje omare</string>
+    <string name="sDodajOblacilo">Dodaj oblačilo</string>
+    <string name="sDodajKombinacijo">Dodaj kombinacijo</string>
+    <string name="sKajNajOblecem">Kaj naj oblečem?</string>
+
+    <string name="sNaziv">Naziv</string>
+    <string name="sVrsta">Vrsta:</string>
+    <string-array name="sVrstaList">
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Vrhnje</item>
+        <item>Obleka</item>
+    </string-array>
+    <string name="sPriloznost">Vrsta:</string>
+    <string-array name="sPriloznostList">
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Vrhnje</item>
+        <item>Obleka</item>
+    </string-array>
+
+
 </resources>

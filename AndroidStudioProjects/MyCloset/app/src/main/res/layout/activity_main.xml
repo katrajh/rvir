@@ -6,13 +6,56 @@
     android:layout_height="match_parent"
     tools:context="rvir.mycloset.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <Button
+        android:id="@+id/gumbMojeOmare"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/sMojeOmare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gumbDodajOblacilo"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/sDodajOblacilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gumbMojeOmare" />
+
+    <Button
+        android:id="@+id/gumbDodajKombinacijo"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/sDodajKombinacijo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gumbDodajOblacilo" />
+
+    <Button
+        android:id="@+id/gumbKajNajOblecem"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/sKajNajOblecem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gumbDodajKombinacijo" />
 
 </android.support.constraint.ConstraintLayout>
