@@ -3,18 +3,29 @@ package rvir.mycloset;
 /**
  * Created by Eva on 19.3.2018.
  */
-
+/*vse spremenljivke lahko zasedejo vrednosti:
+    0-oblačilo se ne nosi v določenem letnem času
+    1-oblačilo se nosi v določenem letnem času
+    2-oblačilo se nosi v določenem letnem času v kombinaciji
+    z drugim oblačilom
+ */
 public class Kombinacija {
     private int id;
-    private LetniCasi letniCasi;
+    private int poletje;
+    private int pomlad;
+    private int zima;
+    private int jesen;
     private int priloznost;
     private Oblacilo povrhnje;
     private Oblacilo top;
     private Oblacilo bottom;
 
-    public Kombinacija(int id, LetniCasi letniCasi, int priloznost, Oblacilo povrhnje, Oblacilo top, Oblacilo bottom) {
+    public Kombinacija(int id, int poletje, int pomlad, int zima, int jesen, int priloznost, Oblacilo povrhnje, Oblacilo top, Oblacilo bottom) {
         this.id = id;
-        this.letniCasi = letniCasi;
+        this.poletje = poletje;
+        this.pomlad = pomlad;
+        this.zima = zima;
+        this.jesen = jesen;
         this.priloznost = priloznost;
         this.povrhnje = povrhnje;
         this.top = top;
@@ -27,14 +38,6 @@ public class Kombinacija {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public LetniCasi getLetniCasi() {
-        return letniCasi;
-    }
-
-    public void setLetniCasi(LetniCasi letniCasi) {
-        this.letniCasi = letniCasi;
     }
 
     public int getPriloznost() {
@@ -67,5 +70,37 @@ public class Kombinacija {
 
     public void setBottom(Oblacilo bottom) {
         this.bottom = bottom;
+    }
+
+    public int getPoletje() {
+        return poletje;
+    }
+
+    public void setPoletje(int poletje) {
+        this.poletje = poletje;
+    }
+
+    public int getPomlad() {
+        return pomlad;
+    }
+
+    public void setPomlad(int pomlad) {
+        this.pomlad = pomlad;
+    }
+
+    public int getZima() {
+        return zima;
+    }
+
+    public void setZima(int zima) {
+        this.zima = zima;
+    }
+
+    public int getJesen() {
+        return jesen;
+    }
+
+    public void setJesen(int jesen) {
+        this.jesen = jesen;
     }
 }
