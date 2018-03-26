@@ -1,5 +1,9 @@
 package rvir.mycloset;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 /**
  * Created by Eva on 19.3.2018.
  */
@@ -9,16 +13,37 @@ package rvir.mycloset;
     2-oblačilo se nosi v določenem letnem času v kombinaciji
     z drugim oblačilom
  */
+
+@Entity
 public class Oblacilo {
+    @PrimaryKey
     private int id;
+
+    @ColumnInfo(name = "slika")
     private String slika;
+
+    @ColumnInfo(name = "naziv")
     private String naziv;
+
+    @ColumnInfo(name = "vrsta")
     private int vrsta;
+
+    @ColumnInfo(name = "priloznost")
     private int priloznost;
+
+    @ColumnInfo(name = "poletje")
     private int poletje;
+
+    @ColumnInfo(name = "pomlad")
     private int pomlad;
+
+    @ColumnInfo(name = "zima")
     private int zima;
+
+    @ColumnInfo(name = "jesen")
     private int jesen;
+
+    @ColumnInfo(name = "polica")
     private Polica polica;
 
     public Oblacilo(int id, String slika, String naziv, int vrsta, int priloznost, int poletje, int pomlad, int zima, int jesen, Polica polica) {

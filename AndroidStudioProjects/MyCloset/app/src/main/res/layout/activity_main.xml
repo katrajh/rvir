@@ -26,6 +26,7 @@
         android:layout_marginEnd="29dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="44dp"
+        android:onClick="dodajOblacilo"
         android:text="@string/sDodajOblacilo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

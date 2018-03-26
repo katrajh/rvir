@@ -78,7 +78,7 @@
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerPriloznost" />
 
@@ -96,7 +96,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="51dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="5dp"
         android:text="@string/sOmara"
         app:layout_constraintEnd_toStartOf="@+id/spinnerOmara"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="55dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="16dp"
         android:text="@string/sPolica"
         app:layout_constraintEnd_toStartOf="@+id/spinnerPolica"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,7 +118,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="5dp"
         android:text="@string/sPomlad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPolica" />
@@ -126,7 +126,7 @@
     <Spinner
         android:id="@+id/spinnerPomlad"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:entries="@array/arrLetniCasi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +142,7 @@
     <Spinner
         android:id="@+id/spinnerPoletje"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:entries="@array/arrLetniCasi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,7 +151,7 @@
     <Spinner
         android:id="@+id/spinnerJesen"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:entries="@array/arrLetniCasi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +160,7 @@
     <Spinner
         android:id="@+id/spinnerZima"
         android:layout_width="368dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:entries="@array/arrLetniCasi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,14 +170,19 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerJesen"/>
+        android:text="@string/sZima"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerJesen" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/gumbShraniObleko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="3dp"
+        android:text="@string/sDodajOblacilo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerZima" />
 
     <TextView
         android:id="@+id/textView6"
