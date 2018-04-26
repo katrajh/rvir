@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AppDB db = Room.databaseBuilder(getApplicationContext(),
-                AppDB.class, "oblacila").build();
+                AppDB.class, "oblacila" +
+                        "").build();
     }
     public void dodajOblacilo(View view) {
         Intent intent = new Intent(this, DodajOblekoActivity.class);
